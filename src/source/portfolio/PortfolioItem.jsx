@@ -22,7 +22,10 @@ export default function PortfolioItem() {
                     spaceBetween={30}
                     slidesPerView={3}
                     navigation
-                    pagination={{ clickable: true }}
+                    pagination={{
+                        clickable: true,
+                        el: '.custom-pagination',
+                      }}
                     loop={false}
                     observer={true}
                     observeParents={true}
@@ -39,6 +42,7 @@ export default function PortfolioItem() {
                         </SwiperSlide>
                     ))}
                 </Swiper>
+                <div className="custom-pagination mt-4 flex justify-center"></div>
             </div>
             {/* موبایل */}
             <div className="flex flex-col gap-4 md:hidden">

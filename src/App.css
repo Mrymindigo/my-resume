@@ -32,3 +32,11 @@
     }
   }
 }
+
+.custom-pagination .swiper-pagination-bullet {
+  @apply bg-[#e5d7c4] opacity-70 w-3 h-3 mx-1 rounded-full transition-all;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  @apply bg-[#CFBB99] opacity-100 w-8 h-3;
+}
