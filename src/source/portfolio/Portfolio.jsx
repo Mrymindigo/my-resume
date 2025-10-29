@@ -13,7 +13,7 @@ export default function Portfolio() {
 
   return (
   <>
-  <div className='mainView flex flex-col justify-center items-center'>
+  <div className='mainView flex flex-col justify-center items-center' id='portfolio'>
   <Title value='Portfolio' />
   <PortfolioItem />
 

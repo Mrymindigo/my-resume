@@ -13,10 +13,10 @@ export default function header() {
           <div className="logo text-gray-100 text-2xl md:text-3xl">MARYAM</div>
 
           <ul className="hidden md:flex navBarContainer gap-8 text-gray-100 transition-all duration-300 delay-150">
-            <NavBar value='about me' />
-            <NavBar value='skills' />
-            <NavBar value='portfoilo' />
-            <NavBar value='contact me' />
+            <NavBar value='about me' targetId='about' />
+            <NavBar value='skills' targetId='skills' />
+            <NavBar value='portfoilo' targetId='portfolio' />
+            <NavBar value='contact me' targetId='contact' />
           </ul>
 
           <button

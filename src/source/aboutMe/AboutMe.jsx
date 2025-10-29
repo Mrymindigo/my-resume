@@ -4,7 +4,7 @@ import Titles from '../Titles'
 export default function AboutMe() {
     return (
         <>
-            <div className='bg-[#cfbb99]'>
+            <div className='bg-[#cfbb99]' id='about'>
                 <div className="aboutMeSection mainView flex flex-col justify-center items-center ">
                     <Titles value='About me' />
                     <p className='w-[60%] text-gray-800 p-4 flex justify-center items-center pb-32 '>

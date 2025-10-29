@@ -7,7 +7,7 @@ import { IoShareSocialOutline } from "react-icons/io5";
 export default function Contact() {
   return (
     <>
-     <div className="contactBack pb-8">
+     <div className="contactBack pb-8" id='contact'>
      <Titles value='Contacts' />
       <div className="contactInfo mainView flex flex-col md:flex-row justify-around items-center gap-6">
         <div className="email flex flex-col justify-center items-center text-[#414033]">
