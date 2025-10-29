@@ -1,14 +1,23 @@
 import { useState } from 'react'
 import './App.css'
-import './test.scss'
+import Header from './source/header/Header'
+import FirstSection from './source/primarySlide/FirstSection'
+import AboutMe from './source/aboutMe/AboutMe'
+import Skills from './source/skills/Skills'
+import Portfolio from './source/portfolio/Portfolio'
+import Contact from './source/contact/Contact'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-     <h1 className='underline'>starter</h1>
-     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, nam!</p>
+    <Header/>
+    <FirstSection />
+    <AboutMe />
+    <Skills />
+    <Portfolio />
+    <Contact />
 
     </>
   )

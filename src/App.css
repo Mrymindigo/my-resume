@@ -1,2 +1,34 @@
+@import "tailwindcss";
 
-@import 'tailwindcss'
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: dana, sans-serif !important;
+    box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@layer components {
+  .mainView {
+    @apply max-w-[1280px] mx-auto;
+  }
+
+  /* برای زمانی که عرض کمتر از 1310px باشه → padding کن */
+  @media (max-width: 1310px) {
+    .mainView {
+      @apply px-4; 
+    }
+  }
+}
