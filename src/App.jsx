@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Element } from 'react-scroll'
 import './App.css'
 import Header from './source/header/Header'
 import FirstSection from './source/primarySlide/FirstSection'
@@ -12,13 +13,24 @@ function App() {
 
   return (
     <>
-    <Header/>
-    <FirstSection />
-    <AboutMe />
-    <Skills />
-    <Portfolio />
-    <Contact />
+      <Header />
+      <FirstSection />
 
+      <Element name='targetId'>
+        <AboutMe />
+      </Element>
+
+      <Element name='targetId'>
+      <Skills />
+      </Element>
+
+      <Element name='targetId'>
+      <Portfolio />
+      </Element>
+
+      <Element name='targetId'>
+      <Contact />
+      </Element>
     </>
   )
 }
