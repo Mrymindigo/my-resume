@@ -59,9 +59,9 @@ export default function header() {
             )}
           </button>
         </div>
-        <div className="themeLangSetup mainView flex justify-end">
+        {/* <div className="themeLangSetup mainView flex justify-end">
           <ThemeToggle />
-        </div>
+        </div> */}
 
         {/* MOBILE MENU OVERLAY */}
         {isMenuOpen && (
