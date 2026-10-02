@@ -4,7 +4,7 @@ export default function FirstSection() {
   return (
     <>
       <div className="firstSectionContainer w-full h-screen relative flex justify-center items-center">
-        <img src="public/image/Working Desk With Laptop & Phone.jpg" alt="backgroung image"
+        <img src="/image/Working Desk With Laptop & Phone.jpg" alt="backgroung image"
           className='top-0 left-0 absolute z-0 w-full h-screen max-w-full object-cover brightness-50' />
 
 
