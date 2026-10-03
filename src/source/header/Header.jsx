@@ -91,10 +91,10 @@ export default function header() {
               </button>
 
               {/* Menu Links */}
-              <NavBar value="about me" />
-              <NavBar value="skills" />
-              <NavBar value="portfolio" />
-              <NavBar value="contact me" />
+              <NavBar value="about me" targetId='about' />
+              <NavBar value="skills" targetId='skills' />
+              <NavBar value="portfolio" targetId='portfolio' />
+              <NavBar value="contact me" targetId='contact' />
             </div>
           </div>
         )}

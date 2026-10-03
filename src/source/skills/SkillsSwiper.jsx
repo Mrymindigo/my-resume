@@ -3,7 +3,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaSass, FaGit } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { RiTailwindCssFill , RiNextjsFill } from "react-icons/ri";
 
 export default function SkillsSwiper() {
   const skills = [
@@ -15,6 +15,7 @@ export default function SkillsSwiper() {
     { id: 6, icon: <FaBootstrap className="text-purple-600" />, name: "Bootstrap" },
     { id: 7, icon: <FaSass className="text-pink-400" />, name: "Sass" },
     { id: 8, icon: <FaGit className="text-red-500" />, name: "Git" },
+    { id: 9, icon: <RiNextjsFill className="text-black" />, name: "Nextjs" },
   ];
 
   return (

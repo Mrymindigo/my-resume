@@ -7,7 +7,7 @@ export default function AboutMe() {
             <div className='bg-[#cfbb99]' id='about'>
                 <div className="aboutMeSection mainView flex flex-col justify-center items-center ">
                     <Titles value='About me' />
-                    <p className='w-[60%] text-gray-800 p-4 flex justify-center items-center pb-32 '>
+                    <p className='w-[90%] md:w-[60%] text-gray-800 p-4 flex justify-center items-center pb-32 '>
                     I’m a passionate Front-End Developer focused on building clean, user-centered interfaces with modern web
                         technologies. My main stack is React, and I love turning complex ideas into smooth,
                         responsive experiences that feel effortless to users.
