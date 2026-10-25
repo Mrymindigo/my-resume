@@ -6,10 +6,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const allPortfolios = [
-    { id: 1, image: "/image/Dashboard.png", alt: "store"  , src:'https://admindashboardmanagement.netlify.app/' },
-    { id: 2, image: "/image/Modern.jpg", alt: "feminine life" },
-    { id: 3, image: "/image/more details.jpg", alt: "ui,ux" },
-    { id: 4, image: "/image/Web Design.jpg", alt: "working desk" }
+    { id: 1, image: "/image/Dashboard.png", alt: "store", src: 'https://admindashboardmanagement.netlify.app/' },
+    { id: 2, image: "/image/Modern.jpg", alt: "feminine life", src: 'https://admindashboardmanagement.netlify.app/' },
+    { id: 3, image: "/image/more details.jpg", alt: "ui,ux", src: 'https://admindashboardmanagement.netlify.app/' },
+    { id: 4, image: "/image/Web Design.jpg", alt: "working desk", src: 'https://admindashboardmanagement.netlify.app/' }
 ];
 
 export default function PortfolioItem() {
@@ -25,7 +25,7 @@ export default function PortfolioItem() {
                     pagination={{
                         clickable: true,
                         el: '.custom-pagination',
-                      }}
+                    }}
                     loop={false}
                     observer={true}
                     observeParents={true}
@@ -33,11 +33,19 @@ export default function PortfolioItem() {
                     {allPortfolios.map((item) => (
                         <SwiperSlide key={item.id}>
                             <div className="flex flex-col items-center">
-                                <img
-                                    src={item.image}
-                                    alt={item.alt}
-                                    className="rounded-2xl shadow-md w-full h-100 object-cover"
-                                />
+                                <a
+                                    href={item.src}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="block w-full cursor-pointer"
+                                >
+                                    <img
+                                        src={item.image}
+                                        alt={item.alt}
+                                        className="rounded-2xl shadow-md w-full h-100 object-cover object-fill"
+                                    />
+                                </a>
+
                             </div>
                         </SwiperSlide>
                     ))}
@@ -48,11 +56,19 @@ export default function PortfolioItem() {
             <div className="flex flex-col gap-4 md:hidden">
                 {allPortfolios.map((item) => (
                     <div key={item.id}>
-                        <img
-                            src={item.image}
-                            alt={item.alt}
-                            className="rounded-2xl shadow-md w-full h-60 object-cover"
-                        />
+                        <a
+                            href={item.src}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block w-full cursor-pointer"
+                        >
+                            <img
+                                src={item.image}
+                                alt={item.alt}
+                                className="rounded-2xl shadow-md w-full h-60 object-cover"
+                            />
+                        </a>
+
                     </div>
                 ))}
             </div>
