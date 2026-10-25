@@ -16,7 +16,7 @@ export default function PortfolioItem() {
     return (
         <div className="mainView">
             {/* desktop */}
-            <div className="desktop hidden md:block">
+            <div className="desktop hidden md:block cursor-pointer">
                 <Swiper
                     modules={[Navigation, Pagination]}
                     spaceBetween={30}
