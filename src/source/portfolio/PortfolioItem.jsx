@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const allPortfolios = [
-    { id: 1, image: "/image/Feminine Life.jpg", alt: "store" },
+    { id: 1, image: "/image/Dashboard.png", alt: "store"  , src:'https://admindashboardmanagement.netlify.app/' },
     { id: 2, image: "/image/Modern.jpg", alt: "feminine life" },
     { id: 3, image: "/image/more details.jpg", alt: "ui,ux" },
     { id: 4, image: "/image/Web Design.jpg", alt: "working desk" }
